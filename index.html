@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api news</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-red-300">
+        <nav id="btn-container" class="container mx-auto flex gap-5 justify-center">
+        </nav>
+    </header>
+
+    <main>
+        <!-- input field -->
+      <div class="flex justify-center my-9">
+
+        <input id="search-input-field" type="text" placeholder="search here" class="input input-bordered input-secondary w-full max-w-xs" />
+        <button id="search-btn" onclick="showNewsBySearch()" class="btn btn-accent">Search</button>
+
+      </div>
+
+
+      <!-- news container -->
+        <section class="container mx-auto">
+            <div id="news-container" class="all  news container flex lg:flex-col">
+            </div>
+        </section>
+
+        <!-- loader  -->
+        <div id="loader" class="flex justify-center  hidden">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+    </main>
+
+    <!-- javaScript file -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
